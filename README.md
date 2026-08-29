@@ -11,21 +11,32 @@
 
 ## 安装
 
-请使用支持安装 GitHub Skill 的 AI Agent，并把以下链接直接交给它。
+请使用支持从 GitHub 安装 Skill 的 AI Agent。复制下方**完整代码块**，粘贴给 Agent 即可；不需要再分别复制对话和链接。
 
-主工作流（必装）：
+### 只安装主工作流（必装）
 
 ```text
+请从以下 GitHub 路径安装 `yinxi-user-research-loop` Skill：
 https://github.com/lifafa0616/yinxi-user-research-skills/tree/main/Skill/yinxi-user-research/yinxi-user-research-loop
+
+安装完成后，请告诉我它已可在下一轮对话中使用。
 ```
 
-模拟访谈（仅在需要模拟演练时安装）：
+### 同时安装主工作流与模拟访谈（仅在需要模拟演练时使用）
 
 ```text
+请从以下两个 GitHub 路径安装 Skill：
+
+1. `yinxi-user-research-loop`（用户研究主工作流，必装）
+https://github.com/lifafa0616/yinxi-user-research-skills/tree/main/Skill/yinxi-user-research/yinxi-user-research-loop
+
+2. `yinxi-user-research-interview`（仅用于模拟用户访谈演练）
 https://github.com/lifafa0616/yinxi-user-research-skills/tree/main/Skill/yinxi-user-research/yinxi-user-research-interview
+
+安装完成后，请告诉我两个 Skill 已可在下一轮对话中使用。
 ```
 
-在 Codex 中，可以对 Agent 说：“请从这个 GitHub 链接安装 Skill”，再粘贴对应链接。安装完成后，通常在下一轮对话生效。
+真实访谈不需要安装模拟访谈 Skill；只安装主工作流即可。
 
 ## 怎么使用
 
