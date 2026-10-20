@@ -23,14 +23,14 @@
 | `yinxi-user-research-loop` | 主流程（S1-S7 + 3 闸门 + 回传） |
 | `yinxi-user-research-interview` | 被访者（独立对话防自证） |
 
-### 唯一工作目录与已安装 Skill
+### 项目源文件与已安装 Skill
 
 | 用途 | 路径 |
 |-|-|
-| **唯一工作目录**（规则原文、版本管理） | `~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/` |
-| **当前已安装目录**（Factory / Codex / Workbuddy 加载） | `~/.factory/skills/yinxi-user-research-loop/` 和 `~/.factory/skills/yinxi-user-research-interview/` |
+| **项目源文件**（规则原文、版本管理） | `~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/` |
+| **已安装 Skill**（Factory / Codex / Workbuddy 加载） | `~/.factory/skills/yinxi-user-research-loop/` 和 `~/.factory/skills/yinxi-user-research-interview/` |
 
-以后只在唯一工作目录修改 Skill 并推送本公开仓库。已安装目录目前仍是独立文件夹；待用户同意后改为指向工作目录的符号链接。
+以后只在项目源文件目录修改 Skill 并推送本公开仓库。已安装 Skill 保持独立；需要在本机使用新版本时，再从源目录更新安装。
 
 ### Skill 目录结构
 
@@ -53,7 +53,7 @@
     └── SKILL.md
 ```
 
-两个 Skill 的安装入口分别位于 `~/.factory/skills/` 下；完成链接替换后，它们会直接读取本仓库中的对应目录。
+两个 Skill 的已安装副本分别位于 `~/.factory/skills/` 下。源文件更新后，已安装副本需要单独更新。
 
 ## 快速了解
 
@@ -69,6 +69,6 @@
 ## 当前状态
 
 - **两个 skill 主体设计完成**，已经过两轮对抗式审查：第一轮修复 11 处，第二轮修复 4 个阻断问题 + 7 个重要问题 + 1 个交互问题（清单见 HANDOFF.md §4）
-- **Skill 与项目文档已合并到本公开仓库**，Skill 工作目录为 `~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/`；本机已安装目录待改为符号链接
+- **Skill 与项目文档已合并到本公开仓库**，Skill 工作目录为 `~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/`；本机已安装 Skill 保持独立
 - **待试跑验证**：拿一个案例从 S1 跑到闸门①，重点看闸门卡片、交接包可复制性、候选可区分性
 - **飞书原文档**：全程未修改，处理方式待定

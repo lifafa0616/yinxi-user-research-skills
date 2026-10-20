@@ -1,7 +1,7 @@
 # 用户研究工作流 · Handoff 文档
 
 > 本文档供下一个接手的人（或 AI 实例）快速理解项目背景、架构决策、当前状态和待办事项。
-> **Source of truth 是本公开仓库 `~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/` 中的 Skill 文件。** 以后只在该目录改规则并推送公开仓库。`~/.factory/skills/` 是安装入口，目前仍为独立文件夹；待用户同意后改为指向该工作目录的符号链接。本文档只记录决策与状态，不复制规则原文。
+> **Source of truth 是本公开仓库 `~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/` 中的 Skill 文件。** 以后只在该目录改规则并推送公开仓库。`~/.factory/skills/` 下是独立的已安装 Skill；需要使用新版本时，再从源目录更新安装。本文档只记录决策与状态，不复制规则原文。
 
 ## 1. 项目背景
 
@@ -23,8 +23,8 @@ Skill 提供便捷，但"一键输出"会让学生跳过理解。设计原则是
 
 | Skill | 角色 | 位置 |
 |-|-|-|
-| `yinxi-user-research-loop` | 主流程，控制 S1-S7 + 3 个闸门 | 安装入口：`~/.factory/skills/yinxi-user-research-loop/` · 唯一工作目录：`~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/yinxi-user-research-loop/` |
-| `yinxi-user-research-interview` | 被访者，在独立对话中扮演用户 | 安装入口：`~/.factory/skills/yinxi-user-research-interview/` · 唯一工作目录：`~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/yinxi-user-research-interview/` |
+| `yinxi-user-research-loop` | 主流程，控制 S1-S7 + 3 个闸门 | 已安装：`~/.factory/skills/yinxi-user-research-loop/` · 项目源文件：`~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/yinxi-user-research-loop/` |
+| `yinxi-user-research-interview` | 被访者，在独立对话中扮演用户 | 已安装：`~/.factory/skills/yinxi-user-research-interview/` · 项目源文件：`~/Documents/yinxi-user-research-skills/Skill/yinxi-user-research/yinxi-user-research-interview/` |
 
 **为什么分两个 skill**：防自证。如果同一个对话里既做研究又扮演用户，模型会复述自己的假设，访谈变成自证。独立对话让被访者只拿到中性代号 + 背景 + 场景，看不到任何行为 / 动机 / 痛点假设，也看不到 Persona 名称。
 
